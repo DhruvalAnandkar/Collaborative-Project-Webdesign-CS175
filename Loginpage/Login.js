@@ -1,8 +1,15 @@
 
-document.getElementById("loginForm").addEventListener("submit", function(event) {
+const users = {
+    "haley@ashland.edu": { password: "123456", dashboard: "haley_personalised.html" },
+    "dhruval@ashland.edu": { password: "123456", dashboard: "dhruval_personalised.html" },
+    "bryce@ashland.edu": { password: "123456", dashboard: "bryce_personalised.html" },
+    "ashley@ashland.edu": { password: "123456", dashboard: "ashley_personalised.html" }
+};
+
+document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault(); // Prevent default form submission
 
-    // Get form values
+
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value.trim();
 
@@ -12,7 +19,11 @@ document.getElementById("loginForm").addEventListener("submit", function(event) 
         return;
     }
 
-    // Success message and redirection
-    alert("You have registered successfully!");
-    window.location.href = "personalisedlogin.html"; // Redirect to personalised login page
+    // Check if the email exists and validate password
+    if (users[email] && users[email].password === password) {
+        alert(`Welcome, ${email.split('@')[0]}!`); 
+        window.location.href = users[email].dashboard; // Redirect to the user's dashboard
+    } else {
+        alert("Invalid email or password."); // Show error for invalid credentials
+    }
 });
