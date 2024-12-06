@@ -15,7 +15,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 116vh;
+    height: 134vh;
     margin: 0;
     background-color: #f8f8f8;
     flex-direction: column;
@@ -167,7 +167,8 @@ nav a:hover {
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(224, 223, 215, 0.1);
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .form-container h2 {
@@ -230,4 +231,41 @@ nav a:hover {
 
 .form-container button:hover {
     background-color: darkred;
+}
+
+footer{
+    display: flex;
+    width: 100%;
+    background-color: rgb(152, 42, 42);
+    color: white;
+    height: 120px;
+  
+}
+.leftfoot{
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    width: 33%;
+    text-align: center;
+    padding: 35px;
+    
+}
+.centerfoot{
+    display: flex;
+    width: 33%;
+    flex-direction: column;
+    text-align: center;
+    padding:16px
+    
+    
+}
+.rightfoot{
+    display: inline-block;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+    width:33%;
+    
 }
