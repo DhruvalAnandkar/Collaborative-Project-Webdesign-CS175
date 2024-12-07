@@ -14,8 +14,11 @@ body {
     font-weight: 700;
     display: flex;
     justify-content: center;
+    /* justify-content: flex-start; /* Changed from center */
+    /* align-items: flex-start;     Changed from center */
+    
     align-items: center;
-    height: 134vh;
+    min-height: 100vh;
     margin: 0;
     background-color: #f8f8f8;
     flex-direction: column;
@@ -238,7 +241,12 @@ footer{
     width: 100%;
     background-color: rgb(152, 42, 42);
     color: white;
-    height: 120px;
+    
+    
+    height: 139px; /* Keep or adjust */
+    padding: 10px 0; /* Adjust padding if needed */
+
+
   
 }
 .leftfoot{
