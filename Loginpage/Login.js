@@ -1,9 +1,9 @@
 
 const users = {
-    "haley@ashland.edu": { password: "123456", dashboard: "haley_personalised.html" },
-    "dhruval@ashland.edu": { password: "123456", dashboard: "dhruval_personalised.html" },
-    "bryce@ashland.edu": { password: "123456", dashboard: "bryce_personalised.html" },
-    "ashley@ashland.edu": { password: "123456", dashboard: "ashley_personalised.html" }
+    "haley@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/haley_personalized.html" },
+    "dhruval@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/dhruval_personalized.html" },
+    "bryce@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/bryce_personalized.html" },
+    "ashley@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/ashley_personalized.html" }
 };
 
 document.getElementById("loginForm").addEventListener("submit", function (event) {
