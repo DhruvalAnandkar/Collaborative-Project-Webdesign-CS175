@@ -14,7 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 110vh;
+    min-height: 85vh;
     margin: 0;
     background-color: #f8f8f8;
     flex-direction: column;
@@ -167,7 +167,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 79vh;
 }
 
 .signin-box {
