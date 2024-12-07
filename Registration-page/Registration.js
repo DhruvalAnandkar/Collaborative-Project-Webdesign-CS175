@@ -8,6 +8,8 @@ document.getElementById("registrationForm").addEventListener("submit", function(
     const password = document.getElementById("password").value.trim();
     const firstName = document.getElementById("first-name").value.trim();
     const lastName = document.getElementById("last-name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const zipcode = document.getElementById("zip").value.trim();
     const terms = document.getElementById("terms").checked;
 
     // Basic validation
@@ -20,7 +22,14 @@ document.getElementById("registrationForm").addEventListener("submit", function(
         alert("Password must be at least 6 characters long.");
         return;
     }
-
+    if (phone.length !=10 ) {
+        alert("Please enter valid phone number");
+        return;
+    }
+    if (zipcode.length != 5 ) {
+        alert("Please enter valid Zipcode");
+        return;
+    }
     if (!terms) {
         alert("You must agree to the Terms & Conditions.");
         return;
