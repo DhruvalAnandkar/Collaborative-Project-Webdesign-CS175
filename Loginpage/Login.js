@@ -1,4 +1,3 @@
-
 const users = {
     "haley@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/haley_personalized.html" },
     "dhruval@ashland.edu": { password: "123456", dashboard: "https://github.com/DhruvalAnandkar/Collaborative-Project-Webdesign-CS175/blob/main/homepage/dhruval_personalized.html" },
